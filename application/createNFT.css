@@ -1,0 +1,102 @@
+    :root {
+        --oxford-blue-2: #0f1729;
+        --cadet-grey: #8a8a8a;
+        --white: #ffffff;
+        --headline-lg: 2rem;
+        --ff-urbanist: 'Urbanist', sans-serif;
+        --fw-700: 700;
+        --body-md: 1.125rem;
+        --radius-pill: 8px;
+        --black: #000000;
+        --transition-1: 0.3s ease-in-out;
+        --radius-circle: 50%;
+        --linear-gradient-1: linear-gradient(to top left, #dc282866, #7c3bed66);
+    }
+
+    html {
+        font-family: var(--ff-urbanist);
+        scroll-behavior: smooth;
+    }
+
+    
+    .btn-secondary {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #7c3bed;
+            border-radius: 300px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            overflow: hidden;
+        }
+    
+    .btn-secondary svg {
+            fill: #ffffff;
+            transition: fill 0.3s ease;
+        }
+    
+    .btn-primary {
+        background-color: #7c3bed;
+        color: #ffffff;
+
+    }
+    .btn-primary:hover {
+        background-color: #6a2fbb;
+    }
+    .btn-secondary:hover {
+            background-color: #6a2fbb;
+        }
+    
+    .btn-secondary:hover svg {
+            fill: #000000;
+        }
+
+    h1 {
+        color: var(--white);
+        font-size: var(--headline-lg);
+        font-weight: var(--fw-700);
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .container {
+        padding-inline: 12px;
+        max-width: 480px;
+        width: 100%;
+        margin-inline: auto;
+    }   
+
+    .btn {
+        color: var(--black);
+        max-width: max-content;
+        font-size: var(--body-md);
+        font-weight: var(--fw-600);
+        padding: 8px 20px;
+        border-radius: var(--radius-pill);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        transition: var(--transition-1);
+    }
+
+    body {
+        background-color: var(--oxford-blue-2);
+        color: var(--cadet-grey);
+        font-style: 1.6rem;
+        line-height: 1.5;
+        z-index: 1;
+    }
+
+    .body-bg-shape {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 600px;
+        background-image: var(--linear-gradient-1);
+        border-radius: var(--radius-circle);
+        filter: blur(200px);
+        z-index: -1;
+    }

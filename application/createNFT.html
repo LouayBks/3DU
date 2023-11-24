@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3DU </title>
+    <link rel="shortcut icon" href="/img/logoapp.png" width="150" height="40">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="createNFT.css">
+</head>
+
+<body>
+
+    <a href="../index.html" class="btn btn-secondary" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+            viewBox="0 0 16 16">
+            <path
+                d="M7.78 12.78a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L5.81 7h7.44a.75.75 0 010 1.5H5.81l2.47 2.47a.75.75 0 010 1.06z" />
+        </svg>
+       
+    </a>
+    <div class="body-bg-shape"></div>
+
+    <div class="container">
+        <h1 class="mt-5">Create 3D NFT Model</h1>
+        <section class="border p-3 my-3 shadow rounded">
+            <div class="row py-2">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary" id="connect">
+                        Connect to MetaMask
+                    </button>
+                </div>
+                <div class="col-md-6 mb-3" style="overflow: hidden;">
+                    <p class="mb-0">Account: <span class="showAccount"></span></p>
+                </div>
+            </div>
+        </section>
+        <section class="border p-3 my-3 shadow rounded">
+            <!-- House Address -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Please Enter Your Model's Name" id="name" />
+            </div>
+            <!-- Nombre of Rooms -->
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description"
+                    placeholder="Enter a description for your model">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Price </label>
+                <input type="text" class="form-control" id="price" placeholder="Please Enter Price in ETH">
+            </div>
+
+            <div class="mb-3">
+                <label for="fileInput">Upload Model</label>
+                <input type="file" class="form-control" id="fileInput" />
+            </div>
+
+            <div class="row py-2">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary" id="create">Create NFT</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <p class="mb-0">Status: <span id="status"></span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.1/web3.min.js"
+        integrity="sha512-vtUOC0YIaNm/UutU7yfnwqnF9LOYnXtpHe2kwi1nvJNloeGQuncNBiEKP/3Ww3D62USAhbXGsnYpAYoiDsa+wA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="script2.js"></script>
+
+</body>
+
+</html>
